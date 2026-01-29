@@ -2,24 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Log in</title>
+  <title>Sign Up</title>
 </head>
 <body>
-  <% if (locals.user) {%>
-    <h1>WELCOME BACK <%= user.username %></h1>
-    <a href="/log-out">LOG OUT</a>
-  <% } else { %>
-  <h1>Log in</h1>
-  <form method="post" action="log-in">
+  <h1>Sign Up</h1>
+  <form method="post" action="sign-up">
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
     <br>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password">
     <br>
-    <button type="submit">Log in</button>
+    <button type="submit">Sign Up</button>
   </form>
-  <p>Don't have an account? <a href="/sign-up">Sign Up</a></p>
-     <%}%>
+  <p>Already have an account? <a href="<%= link[1]%>">Log in</a></p>
+  <p><a href="<%= link[0]%>">Home</a></p>
 </body>
 </html>
