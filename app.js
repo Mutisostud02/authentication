@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs')
 const express = require('express')
-require('dotenv').config('')
+require('dotenv').config()
 
 const path = require('path')
 
